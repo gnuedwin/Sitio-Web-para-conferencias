@@ -445,6 +445,16 @@ div.invitado {
 }
 div.invitado img {
   max-width: 100%;
+  filter: grayscale(1);
+  -webkit-filter: gray-scale(1);
+  -webkit-transition: all .10s ease-in-out;
+}
+div.invitado:hover img {
+  filter: grayscale(0);
+  -webkit-filter: gray-scale(0);
+  -webkit-transition: all .10s ease-in-out;
+  -webkit-transform: scale(1.1);
+  /*transform: rotate(3deg);*/
 }
 div.invitado p {
   position: absolute;
@@ -458,8 +468,12 @@ div.invitado p {
   font-family: 'Oswald', sans-serif;
   color: #fe4918;
   text-transform: uppercase;
+  -webkit-transition: all .10s ease-in-out;
 }
-
+div.invitado:hover p {
+  bottom: -80px;
+  opacity: 0;
+}
 
 /* ==========================================================================
    Helper classes
