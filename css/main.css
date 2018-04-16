@@ -252,10 +252,11 @@ h3 {
   font-size: 1em;
   margin-top: 20px;
   display: inline-block;
+  transition: all .6s ease;
 }
 .button:hover {
   background-color: #e33000;
-  transition: all .6s ease;
+
 }
 .float-right {
   float: right;
@@ -418,7 +419,7 @@ div.detalle-evento p {
   margin-bottom: 20px;
   font-size: 20px;
 }
-div.detalle-evento
+
 
 
 
